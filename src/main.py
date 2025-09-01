@@ -17,7 +17,7 @@ app = Flask(__name__, static_folder=os.path.join(os.path.dirname(__file__), 'sta
 app.config['SECRET_KEY'] = 'asdf#FGSgvasgf$5$WGT'
 
 # Habilita CORS para todas as rotas
-CORS(app, origins=['https://assistente-juiz-frontend.vercel.app'])
+CORS(app, origins=['https://assistente-juiz-frontend-9xsux8kme-vitorcorddevs-projects.vercel.app'])
 
 app.register_blueprint(user_bp, url_prefix='/api')
 app.register_blueprint(jurisprudencia_bp, url_prefix='/api/jurisprudencia')
